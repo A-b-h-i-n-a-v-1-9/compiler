@@ -1,7 +1,8 @@
-CXX     = g++
+CXX      = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
-SRC     = src/main.cpp src/lexer.cpp src/parser.cpp src/evaluator.cpp
-TARGET  = compiler
+SRC      = src/main.cpp src/lexer.cpp src/parser.cpp \
+           src/evaluator.cpp src/ir_gen.cpp src/reg_alloc.cpp
+TARGET   = compiler
 
 all: $(TARGET)
 
